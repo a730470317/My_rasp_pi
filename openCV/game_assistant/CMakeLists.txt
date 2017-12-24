@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Game_assistant  )
+find_package( OpenCV REQUIRED  )
+add_executable( Game_assistant main.cpp )
+target_link_libraries( Game_assistant ${OpenCV_LIBS}  )
